@@ -1,7 +1,10 @@
 ﻿namespace TabletopHelper.Characters.Library
 {
+    //base structure for hit dice
     public class HitDice
     {
-        //add variables for total number of dice, die type, and modifier
+       public int TotalDice { get; set; }
+        public int DieType { get; set; }
+        public int HitDieModifier { get; set; }
     }
 }

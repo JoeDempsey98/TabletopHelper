@@ -1,8 +1,14 @@
 ﻿namespace TabletopHelper.Characters.Library
 {
+    //base structure for an attack
     public class Attack
     {
-        //add variables for attack roll, damage roll, and damage type (physical attacks)
-        //add variables for spell casting modifier, ranged spell attack, and spell damage roll (spell attacks)
+        public string AttackName { get; set; }
+        public int AttackRollModifier { get; set; }
+        public int DamageDieValue { get; set; }
+        public int DamageModifier { get; set; }
+        public string DamageType { get; set; }
+        public bool IsCheckedSpell { get; set; }
+        public int SaveDCValue { get; set; }
     }
 }

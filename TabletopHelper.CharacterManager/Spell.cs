@@ -1,7 +1,13 @@
-﻿namespace TabletopHelper.Characters.Library
+﻿using System.Collections.Generic;
+
+namespace TabletopHelper.Characters.Library
 {
+    //base structure for spells
     public class Spell
     {
-        //add variables for name, school, components, and description
+        public string SpellName { get; set; }
+        public string SpellSchool { get; set; }
+        public List<string> SpellComponents { get; set; }
+        public string SpellDescription { get; set; }
     }
 }

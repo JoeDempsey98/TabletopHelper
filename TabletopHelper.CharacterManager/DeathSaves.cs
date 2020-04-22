@@ -1,7 +1,9 @@
 ﻿namespace TabletopHelper.Characters.Library
 {
+    //base structure for death saves
     public class DeathSaves
     {
-        //add variables to track number of successes and losses
+        public int SuccessfulSaves { get; set; }
+        public int FailedSaves { get; set; }
     }
 }

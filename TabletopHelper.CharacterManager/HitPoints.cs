@@ -1,7 +1,10 @@
 ﻿namespace TabletopHelper.Characters.Library
 {
+    //base structure for hit points
     public class HitPoints
     {
-        //add variables for maximum health, current health, and temporary hit points
+        public int MaximumHealth { get; set; }
+        public int CurrentHealth { get; set; }
+        public int TemporaryHealth { get; set; }
     }
 }
