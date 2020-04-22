@@ -1,4 +1,4 @@
-﻿namespace TabletopHelper.CharacterManager
+﻿namespace TabletopHelper.Characters.Library
 {
     public class SavingThrow
     {

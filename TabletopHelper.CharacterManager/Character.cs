@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace TabletopHelper.CharacterManager
+namespace TabletopHelper.Characters.Library
 {
     //base structure for a character
     public class Character
