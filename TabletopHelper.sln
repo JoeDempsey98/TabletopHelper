@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TabletopHelper.Characters.Library", "TabletopHelper.CharacterManager\TabletopHelper.Characters.Library.csproj", "{3ACED1DA-1C28-4068-AECD-89E732B6D009}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Characters", "Characters", "{515CD23E-B1CB-4EB9-8449-416BC5A9DC87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabletopHelper.Characters.CharacterGenerator", "TabletopHelper.Characters.CharacterGenerator\TabletopHelper.Characters.CharacterGenerator.csproj", "{3A995BFA-E9AA-412A-804E-E94B7E80A2ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TabletopHelper.Characters.Library", "Characters\Library\TabletopHelper.Characters.Library.csproj", "{58B7A659-BB46-4575-9B88-FAE71D0ECA58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TabletopHelper.Characters.CharacterGenerator", "Characters\CharacterGenerator\TabletopHelper.Characters.CharacterGenerator.csproj", "{C02F1307-EB29-4BB6-9F46-82EA4C18453E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +15,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3ACED1DA-1C28-4068-AECD-89E732B6D009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3ACED1DA-1C28-4068-AECD-89E732B6D009}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3ACED1DA-1C28-4068-AECD-89E732B6D009}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3ACED1DA-1C28-4068-AECD-89E732B6D009}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A995BFA-E9AA-412A-804E-E94B7E80A2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A995BFA-E9AA-412A-804E-E94B7E80A2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A995BFA-E9AA-412A-804E-E94B7E80A2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A995BFA-E9AA-412A-804E-E94B7E80A2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58B7A659-BB46-4575-9B88-FAE71D0ECA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58B7A659-BB46-4575-9B88-FAE71D0ECA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58B7A659-BB46-4575-9B88-FAE71D0ECA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58B7A659-BB46-4575-9B88-FAE71D0ECA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02F1307-EB29-4BB6-9F46-82EA4C18453E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02F1307-EB29-4BB6-9F46-82EA4C18453E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02F1307-EB29-4BB6-9F46-82EA4C18453E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02F1307-EB29-4BB6-9F46-82EA4C18453E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3ACED1DA-1C28-4068-AECD-89E732B6D009} = {515CD23E-B1CB-4EB9-8449-416BC5A9DC87}
-		{3A995BFA-E9AA-412A-804E-E94B7E80A2ED} = {515CD23E-B1CB-4EB9-8449-416BC5A9DC87}
+		{58B7A659-BB46-4575-9B88-FAE71D0ECA58} = {515CD23E-B1CB-4EB9-8449-416BC5A9DC87}
+		{C02F1307-EB29-4BB6-9F46-82EA4C18453E} = {515CD23E-B1CB-4EB9-8449-416BC5A9DC87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D170E134-1E63-4B23-90BD-B576D285E839}
