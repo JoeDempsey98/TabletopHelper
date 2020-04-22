@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace TabletopHelper.Characters.Library
+﻿namespace TabletopHelper.Characters.CharacterLibrary
 {
     //base structure for skills
     public class Skill

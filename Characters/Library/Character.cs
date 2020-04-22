@@ -1,10 +1,6 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
+﻿using System.Collections.Generic;
 
-namespace TabletopHelper.Characters.Library
+namespace TabletopHelper.Characters.CharacterLibrary
 {
     //base structure for a character
     public class Character

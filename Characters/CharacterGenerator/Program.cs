@@ -1,22 +1,51 @@
 ﻿using System;
-using System.Linq;
 
 namespace TabletopHelper.Characters.CharacterGenerator
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            //test 
-            var character = Generator.GenerateNewCharacter();
-            Console.WriteLine("Name: " + character.CharacterName);
-            Console.WriteLine("Player Name: " + character.PlayerName);
-            Console.WriteLine("HP: " + character.HitPoints.CurrentHealth);
-            Console.WriteLine("Race: " + character.Race);
-            Console.WriteLine("Class: " + character.Classes.First());
-            Console.WriteLine("AC: " + character.ArmorClass);
-            Console.WriteLine("Background: " + character.Background);
-            Console.WriteLine("Alignment: " + character.Alignment);
+            //eventually clear out this area to further abstract
+            //add further classes and/or projects to control further aspects, ie playable class management, inventory configuration, attack creation, etc.
+
+            Console.WriteLine("Input Player Name: ");
+            string playerName = Console.ReadLine();
+            Console.WriteLine("Input Character Name: ");
+            string characterName = Console.ReadLine();
+            Console.WriteLine("Input Race: ");
+            string race = Console.ReadLine();
+            Console.WriteLine("Input Class: ");
+            string className = Console.ReadLine();
+            Console.WriteLine("Input Background: ");
+            string background = Console.ReadLine();
+            Console.WriteLine("Input Alignment: ");
+            string alignment = Console.ReadLine();
+            Console.WriteLine("Input Strength: ");
+            int strength = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Input Dexterity: ");
+            int dexterity = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Input Constitution: ");
+            int constitution = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Input Wisdom: ");
+            int wisdom = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Input Intelligence: ");
+            int intelligence = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Input Charisma: ");
+            int charisma = Int32.Parse(Console.ReadLine());
+
+            var character = Generator.GenerateNewCharacter
+                (characterName, playerName, race, 
+                className, background, alignment,
+                strength, dexterity, constitution,
+                wisdom, intelligence, charisma);
+
+            Console.WriteLine("Modifiers:");
+            foreach(var i in character.AbilityScores)
+            {
+                Console.WriteLine("{0}: {1}, {2}", i.ScoreName, i.ScoreValue, i.ScoreModifier);
+            }
         }
     }
 }
+ 

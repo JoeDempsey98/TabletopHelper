@@ -1,4 +1,4 @@
-﻿namespace TabletopHelper.Characters.Library
+﻿namespace TabletopHelper.Characters.CharacterLibrary
 {
     //base structure for an ability score
     public class AbilityScore
