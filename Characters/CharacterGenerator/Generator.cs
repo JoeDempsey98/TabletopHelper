@@ -22,16 +22,10 @@ namespace TabletopHelper.Characters.CharacterGenerator
                 Race = race,
                 Classes = new List<string> { className },
                 Background = background,
-                Alignment = alignment,
-                AbilityScores = new List<AbilityScore>
-                {
-                    new AbilityScore{ScoreName = "Strength", ScoreValue = strength, ScoreModifier = Convert.ToInt32(Math.Floor((strength - 10) / 2f))},
-                    new AbilityScore{ScoreName = "Dexterity", ScoreValue = dexterity, ScoreModifier = Convert.ToInt32(Math.Floor((dexterity - 10) / 2f))},
-                    new AbilityScore{ScoreName = "Constitution", ScoreValue = constitution, ScoreModifier = Convert.ToInt32(Math.Floor((constitution - 10) / 2f))},
-                    new AbilityScore{ScoreName = "Wisdom", ScoreValue = wisdom, ScoreModifier = Convert.ToInt32(Math.Floor((wisdom - 10) / 2f))},
-                    new AbilityScore{ScoreName = "Intelligence", ScoreValue = intelligence, ScoreModifier = Convert.ToInt32(Math.Floor((intelligence - 10) / 2f))},
-                    new AbilityScore{ScoreName = "Charisma", ScoreValue = charisma, ScoreModifier = Convert.ToInt32(Math.Floor((charisma - 10) / 2f))}
-                }
+                Alignment = alignment
+                //add ability score generator
+                //add attack generator
+                //add inventory creation
             };
         }
     }

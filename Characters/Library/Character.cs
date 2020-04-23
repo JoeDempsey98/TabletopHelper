@@ -12,7 +12,7 @@ namespace TabletopHelper.Characters.CharacterLibrary
         public string Alignment { get; set; }
         public string PlayerName { get; set; }
         public int ExperiencePoints { get; set; }
-        public List<AbilityScore> AbilityScores { get; set; }
+        public AbilityScores AbilityScores { get; set; }
         public bool Inspiration { get; set; }
         public int ProficiencyBonus { get; set; }
         public List<SavingThrow> SavingThrows { get; set; }
@@ -29,6 +29,6 @@ namespace TabletopHelper.Characters.CharacterLibrary
         public List<string> Languages { get; set; }
         public List<string> Features { get; set; }
         public List<string> Traits { get; set; }
-        public List<string> Inventory { get; set; }
+        public Inventory Inventory { get; set; }
     }
 }
