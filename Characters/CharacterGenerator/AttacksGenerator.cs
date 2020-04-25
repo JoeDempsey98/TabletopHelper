@@ -16,16 +16,11 @@ namespace TabletopHelper.Characters.CharacterGenerator
             {
                 Attack attack = new Attack();
                 attack.AttackName = weapon.Name;
-                attack.DamageDieValue = weapon.DamageDie;
+                attack.DamageDieValue = Int32.Parse(weapon.DamageDie);
                 attack.DamageType = weapon.DamageType;
-                if (weapon.IsFinesse)
-                {
-                    attack.AttackRollModifier = character.AbilityScores.Dexterity.ScoreModifier;
-                }
-                else
-                {
-                    attack.AttackRollModifier = character.AbilityScores.Strength.ScoreModifier;
-                }
+
+                //look at weapon for the finesse property
+
                 attacks.Add(attack);
             }
 
