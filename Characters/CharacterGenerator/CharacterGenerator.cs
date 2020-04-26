@@ -4,7 +4,7 @@ using TabletopHelper.Characters.CharacterLibrary;
 
 namespace TabletopHelper.Characters.CharacterGenerator
 {
-    public static class Generator
+    public static class CharacterGenerator
     {
         //add in further methods to allow for customization in the character generation process
 
@@ -22,11 +22,21 @@ namespace TabletopHelper.Characters.CharacterGenerator
                 Race = race,
                 Classes = new List<string> { className },
                 Background = background,
-                Alignment = alignment
-                //add ability score generator
+                Alignment = alignment,
+                AbilityScores = AbilityScoresGenerator.Generate(strength, dexterity, constitution, wisdom, intelligence, charisma)
+
                 //add attack generator
                 //add inventory creation
             };
         }
+
+        /*
+         * Add a method that generates a character as follows:
+         * 1. Get player name and character name
+         * 2. Get race, class, and levels
+         * 3. Get ability scores
+         * 4. Get character background, alignment
+         * 5. Get starting equipment
+         */
     }
 }

@@ -10,7 +10,7 @@ namespace TabletopHelper.Data.APIConnector
     public static class GetEquipment
     {
         //include newtonsoft to convert from json string to parsable and queriable lists
-        private static string baseURL = "http://www.dnd5eapi.co";
+        private static readonly string baseURL = "http://www.dnd5eapi.co";
 
         public static IList<WeaponModel> GetAllWeapons()
         {
@@ -38,17 +38,15 @@ namespace TabletopHelper.Data.APIConnector
 
             return weaponList;
         }
-        public static string GetSearchedWeapon(string weaponName)
+        public static WeaponModel GetSearchedWeapon(string weaponName)
         {
-            /* 
-             * use newtonsoft to get the list of all weapons
-             * and parse it for specific weapon type and use available returned url
-             * to get further content
-             * 
-             * could use regex as well to allow for non-complete weapon name searches
-             */
-            string content = "";
-            return content;
+            IList<WeaponModel> weapons = GetAllWeapons();
+            foreach (var weapon in weapons)
+            {
+                if (weapon.Name == weaponName)
+                    return weapon;
+            }
+            return null;
         }
     }
 }

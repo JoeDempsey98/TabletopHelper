@@ -14,10 +14,12 @@ namespace TabletopHelper.Characters.CharacterGenerator
 
             foreach (var weapon in weapons)
             {
-                Attack attack = new Attack();
-                attack.AttackName = weapon.Name;
-                attack.DamageDieValue = Int32.Parse(weapon.DamageDie);
-                attack.DamageType = weapon.DamageType;
+                Attack attack = new Attack
+                {
+                    AttackName = weapon.Name,
+                    DamageDieValue = Int32.Parse(weapon.DamageDie),
+                    DamageType = weapon.DamageType
+                };
 
                 //look at weapon for the finesse property
 

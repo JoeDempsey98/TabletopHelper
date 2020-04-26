@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Data\APIConnector\TabletopHelper.Data.APIConnector.csproj" />
-    <ProjectReference Include="..\Library\TabletopHelper.Characters.CharacterLibrary.csproj" />
+    <ProjectReference Include="..\..\Data\APIConnector\APIConnector.csproj" />
+    <ProjectReference Include="..\Library\CharacterLibrary.csproj" />
   </ItemGroup>
 
 </Project>
