@@ -24,6 +24,7 @@ namespace CharacterSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            //add in a singleton for crud character service
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
