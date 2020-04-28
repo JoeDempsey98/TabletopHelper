@@ -1,0 +1,36 @@
+﻿@page
+@model CharacterSite.Pages.Characters.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Characters</h1>
+
+<div class="card-deck">
+    @foreach(var character in Model.Characters)
+    {
+        <div class="card m-3" style="min-width: 200px">
+            <div class="card-header">
+                <h3>@character.CharacterName</h3>
+            </div>
+            <div class="card-body">
+                @character.Race
+                @foreach(var c in character.Classes)
+                {
+                    <p>@c</p>
+                }
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary m-1">View</a>
+                <a href="#" class="btn btn-primary m-1">Edit</a>
+                <a href="#" class="btn btn-danger m-1">Delete</a>
+            </div>
+        </div>
+    }
+    <div class="card m-3" style="min-width: 200px">
+        <div class="card-header">Create New Character</div>
+        <div class="card-body align-self-center">
+            <a href="#" class="btn btn-info my-5">New</a>
+        </div>
+    </div>
+</div>

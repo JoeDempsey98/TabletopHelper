@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CharacterLibrary;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,7 +25,8 @@ namespace CharacterSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            //add in a singleton for crud character service
+            //change DevCharacterList to better implementation when applicable
+            services.AddSingleton<ICharacterList, DevCharacterList>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

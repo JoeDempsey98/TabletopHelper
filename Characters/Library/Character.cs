@@ -5,6 +5,7 @@ namespace TabletopHelper.Characters.CharacterLibrary
     //base structure for a character
     public class Character
     {
+        public int Id { get; set; }
         public string CharacterName { get; set; }
         public List<string> Classes { get; set; }
         public string Race { get; set; }
