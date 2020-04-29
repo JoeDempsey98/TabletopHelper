@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Characters\Library\CharacterLibrary.csproj" />
+    <ProjectReference Include="..\..\Data\CharacterService\CharacterService.csproj" />
   </ItemGroup>
 
 </Project>

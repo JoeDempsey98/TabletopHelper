@@ -4,21 +4,20 @@ using TabletopHelper.Data.CharacterService;
 
 namespace CharacterSite.Pages.Characters
 {
-    public class AddModel : PageModel
+    public class DetailsModel : PageModel
     {
         private readonly ICharacterList characterList;
 
-        public AddModel(ICharacterList characterList)
+        public DetailsModel(ICharacterList characterList)
         {
             this.characterList = characterList;
         }
 
-        public Character Character { get; set; }
+        public Character Character { get; private set; }
 
-        //inject class for creating characters, and uploading them to database/cloud
-        public void OnGet()
+        public void OnGet(int id)
         {
-
+            Character = characterList.GetCharacter(id);
         }
     }
 }

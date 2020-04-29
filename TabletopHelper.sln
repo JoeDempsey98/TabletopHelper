@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIConnector", "Data\APICon
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{44F33FD1-1B46-4DC8-B359-C339350CF9DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterSite", "Web\CharacterSite\CharacterSite.csproj", "{11257E43-CDCB-4FE0-8C86-2F4885E4D9E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterSite", "Web\CharacterSite\CharacterSite.csproj", "{11257E43-CDCB-4FE0-8C86-2F4885E4D9E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterService", "Data\CharacterService\CharacterService.csproj", "{ED2ED10C-7B62-4557-841C-44AF9E347748}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{11257E43-CDCB-4FE0-8C86-2F4885E4D9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11257E43-CDCB-4FE0-8C86-2F4885E4D9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11257E43-CDCB-4FE0-8C86-2F4885E4D9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2ED10C-7B62-4557-841C-44AF9E347748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2ED10C-7B62-4557-841C-44AF9E347748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2ED10C-7B62-4557-841C-44AF9E347748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2ED10C-7B62-4557-841C-44AF9E347748}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{C02F1307-EB29-4BB6-9F46-82EA4C18453E} = {515CD23E-B1CB-4EB9-8449-416BC5A9DC87}
 		{A1D82D43-744C-4F64-A906-47650B69EBD3} = {E4D45FBF-7114-4E61-8BF3-79DFA15FED2B}
 		{11257E43-CDCB-4FE0-8C86-2F4885E4D9E0} = {44F33FD1-1B46-4DC8-B359-C339350CF9DD}
+		{ED2ED10C-7B62-4557-841C-44AF9E347748} = {E4D45FBF-7114-4E61-8BF3-79DFA15FED2B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D170E134-1E63-4B23-90BD-B576D285E839}

@@ -1,0 +1,71 @@
+﻿@page
+@model CharacterSite.Pages.Characters.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+    bool hasAbilities;
+    if (Model.Character.AbilityScores == null)
+        hasAbilities = false;
+    else
+        hasAbilities = true;
+    string noAbility = "Not set";
+}
+
+<!--
+    include more cards for things like equipment, attacks, spells, etc.
+    add buttons to go back, edit, and delete
+    stylize the css better to be closer in design to a character sheet
+-->
+
+<div class="row justify-content-center m-3">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">@Model.Character.CharacterName</h4>
+                <h6 class="card-text">
+                    @Model.Character.Race @foreach(string c in Model.Character.Classes) 
+                    {
+                        @c 
+                    }
+                </h6>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    Strength: @if (hasAbilities)
+                    {@Model.Character.AbilityScores.Strength.ScoreValue}
+                else
+                {@noAbility}
+                </li>
+                <li class="list-group-item">
+                    Dexterity: @if (hasAbilities)
+                    {@Model.Character.AbilityScores.Dexterity.ScoreValue}
+                else
+                {@noAbility}
+                </li>
+                <li class="list-group-item">
+                    Constitution: @if (hasAbilities)
+                    {@Model.Character.AbilityScores.Constitution.ScoreValue}
+                else
+                {@noAbility}
+                </li>
+                <li class="list-group-item">
+                    Wisdom: @if (hasAbilities)
+                    {@Model.Character.AbilityScores.Wisdom.ScoreValue}
+                else
+                {@noAbility}
+                </li>
+                <li class="list-group-item">
+                    Intelligence: @if (hasAbilities)
+                    {@Model.Character.AbilityScores.Intelligence.ScoreValue}
+                else
+                {@noAbility}
+                </li>
+                <li class="list-group-item">
+                    Charisma: @if (hasAbilities)
+                    {@Model.Character.AbilityScores.Charisma.ScoreValue}
+                else
+                {@noAbility}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
