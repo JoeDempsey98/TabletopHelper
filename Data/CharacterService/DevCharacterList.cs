@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using TabletopHelper.Characters.CharacterLibrary;
 
-namespace CharacterLibrary
+namespace TabletopHelper.Data.CharacterService
 {
     public class DevCharacterList : ICharacterList
     {
@@ -41,7 +42,7 @@ namespace CharacterLibrary
 
         public Character GetCharacter(int id)
         {
-            throw new NotImplementedException();
+            return _characterList.FirstOrDefault(c => c.Id == id);
         }
     }
 }

@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using TabletopHelper.Characters.CharacterLibrary;
 
-namespace CharacterLibrary
+namespace TabletopHelper.Data.CharacterService
 {
     public interface ICharacterList
     {
