@@ -26,7 +26,13 @@
                     {
                         @c 
                     }
+                    @Model.Character.Background
                 </h6>
+                <div class="card-text">
+                    HP: @Model.Character.HitPoints.CurrentHealth / @Model.Character.HitPoints.MaximumHealth
+                    Alignment: @Model.Character.Alignment
+                    Experience: @Model.Character.ExperiencePoints
+                </div>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
@@ -34,38 +40,47 @@
                     {@Model.Character.AbilityScores.Strength.ScoreValue}
                 else
                 {@noAbility}
+                    (@Model.Character.AbilityScores.Strength.ScoreModifier)
                 </li>
                 <li class="list-group-item">
                     Dexterity: @if (hasAbilities)
                     {@Model.Character.AbilityScores.Dexterity.ScoreValue}
                 else
                 {@noAbility}
+                    (@Model.Character.AbilityScores.Dexterity.ScoreModifier)
                 </li>
                 <li class="list-group-item">
                     Constitution: @if (hasAbilities)
                     {@Model.Character.AbilityScores.Constitution.ScoreValue}
                 else
                 {@noAbility}
+                    (@Model.Character.AbilityScores.Constitution.ScoreModifier)
                 </li>
                 <li class="list-group-item">
                     Wisdom: @if (hasAbilities)
                     {@Model.Character.AbilityScores.Wisdom.ScoreValue}
                 else
                 {@noAbility}
+                    (@Model.Character.AbilityScores.Wisdom.ScoreModifier)
                 </li>
                 <li class="list-group-item">
                     Intelligence: @if (hasAbilities)
                     {@Model.Character.AbilityScores.Intelligence.ScoreValue}
                 else
                 {@noAbility}
+                    (@Model.Character.AbilityScores.Intelligence.ScoreModifier)
                 </li>
                 <li class="list-group-item">
                     Charisma: @if (hasAbilities)
                     {@Model.Character.AbilityScores.Charisma.ScoreValue}
                 else
                 {@noAbility}
+                    (@Model.Character.AbilityScores.Charisma.ScoreModifier)
                 </li>
             </ul>
+            <div class="card-text">
+                This is a place holder for additional info
+            </div>
         </div>
     </div>
 </div>

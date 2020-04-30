@@ -16,7 +16,17 @@ namespace TabletopHelper.Data.CharacterService
                 new Character()
                 {
                     Id = 1, CharacterName = "Bob", PlayerName = "Jim", Race = "Human",
-                    Classes = new List<string> {"Barbarian"}
+                    Classes = new List<string> {"Barbarian"}, Background = "Noble", Alignment = "LG",
+                    AbilityScores = new AbilityScores
+                    {
+                        Strength = new AbilityScore {ScoreValue = 19},
+                        Dexterity = new AbilityScore {ScoreValue = 17},
+                        Constitution = new AbilityScore {ScoreValue = 16},
+                        Wisdom = new AbilityScore {ScoreValue = 13},
+                        Intelligence = new AbilityScore {ScoreValue = 10},
+                        Charisma = new AbilityScore {ScoreValue = 8}
+                    },
+                    HitPoints = new HitPoints {MaximumHealth = 14, CurrentHealth = 14}
                 },
                 new Character()
                 {

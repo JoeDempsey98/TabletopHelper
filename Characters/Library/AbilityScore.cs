@@ -4,6 +4,6 @@
     public class AbilityScore
     {
         public int ScoreValue { get; set; }
-        public int ScoreModifier { get; set; }
+        public int ScoreModifier { get { return (ScoreValue - 10) / 2; } }
     }
 }
