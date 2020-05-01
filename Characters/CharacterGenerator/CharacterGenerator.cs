@@ -1,4 +1,5 @@
-﻿using System;
+﻿using TabletopHelper.Characters.CharacterLibrary;
+using System;
 using System.Collections.Generic;
 using TabletopHelper.Characters.CharacterLibrary;
 
@@ -20,7 +21,7 @@ namespace TabletopHelper.Characters.CharacterGenerator
                 CharacterName = characterName,
                 PlayerName = playerName,
                 Race = race,
-                Classes = new List<string> { className },
+                Classes = new List<Class> { new Class { Name = className } },
                 Background = background,
                 Alignment = alignment,
                 AbilityScores = AbilityScoresGenerator.Generate(strength, dexterity, constitution, wisdom, intelligence, charisma)

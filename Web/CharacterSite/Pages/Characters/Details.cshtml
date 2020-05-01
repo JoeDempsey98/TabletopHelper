@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:min(1)}"
 @model CharacterSite.Pages.Characters.DetailsModel
 @{
     ViewData["Title"] = "Details";
@@ -22,7 +22,7 @@
             <div class="card-body">
                 <h4 class="card-title">@Model.Character.CharacterName</h4>
                 <h6 class="card-text">
-                    @Model.Character.Race @foreach(string c in Model.Character.Classes) 
+                    @Model.Character.Race @foreach(var c in Model.Character.Classes) 
                     {
                         @c 
                     }
@@ -78,9 +78,10 @@
                     (@Model.Character.AbilityScores.Charisma.ScoreModifier)
                 </li>
             </ul>
-            <div class="card-text">
-                This is a place holder for additional info
-            </div>
+            @foreach(var feat in Model.Character.Features)
+            {
+                <div class="card-text">@feat</div>
+            }
         </div>
     </div>
 </div>

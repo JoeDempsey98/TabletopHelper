@@ -7,7 +7,7 @@ namespace TabletopHelper.Characters.CharacterLibrary
     {
         public int Id { get; set; }
         public string CharacterName { get; set; }
-        public List<string> Classes { get; set; }
+        public List<Class> Classes { get; set; }
         public string Race { get; set; }
         public string Background { get; set; }
         public string Alignment { get; set; }
