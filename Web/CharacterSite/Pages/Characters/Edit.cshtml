@@ -27,18 +27,11 @@
         </div>
     </div>
     <!--
-        add in other form controls for things like
-        classes
-        ability scores
-        inventory
-        etc
+        make a multi staged form that adds in steps to update the character
     -->
     <div class="form-group row">
-        <label asp-for="Character.Classes" class="col-sm-2 col-form-label"></label>
-        <select multiple class="form-control" asp-for="SelectedOptions" asp-items="Model.Options" ></select>
-    </div>
-    <div class="form-group row">
         <div class="col-sm-10">
+            <button class="btn btn-primary">Next</button>
             <button type="submit" class="btn btn-primary">Update</button>
             <a asp-page="/Characters/Index" class="btn btn-primary">Cancel</a>
         </div>
