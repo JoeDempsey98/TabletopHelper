@@ -34,6 +34,10 @@
         etc
     -->
     <div class="form-group row">
+        <label asp-for="Character.Classes" class="col-sm-2 col-form-label"></label>
+        <select multiple class="form-control" asp-for="SelectedOptions" asp-items="Model.Options" ></select>
+    </div>
+    <div class="form-group row">
         <div class="col-sm-10">
             <button type="submit" class="btn btn-primary">Update</button>
             <a asp-page="/Characters/Index" class="btn btn-primary">Cancel</a>

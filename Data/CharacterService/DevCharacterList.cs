@@ -17,7 +17,7 @@ namespace TabletopHelper.Data.CharacterService
                 new Character()
                 {
                     Id = 1, CharacterName = "Bob", PlayerName = "Jim", Race = "Human",
-                    Classes = new List<Class> { new Class { Name = "Barbarian" } }, Background = "Noble", Alignment = "LG",
+                    Classes = new List<Class> { new Class { Name = "Barbarian", Id = 1 } }, Background = "Noble", Alignment = "LG",
                     AbilityScores = new AbilityScores
                     {
                         Strength = new AbilityScore {ScoreValue = 19},

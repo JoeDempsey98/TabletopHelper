@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{44F33FD1-1B4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterSite", "Web\CharacterSite\CharacterSite.csproj", "{11257E43-CDCB-4FE0-8C86-2F4885E4D9E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterService", "Data\CharacterService\CharacterService.csproj", "{ED2ED10C-7B62-4557-841C-44AF9E347748}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterService", "Data\CharacterService\CharacterService.csproj", "{ED2ED10C-7B62-4557-841C-44AF9E347748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassService", "Data\ClassService\ClassService.csproj", "{B82EBBCD-4E27-4BA2-908D-06E9760AF16C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{ED2ED10C-7B62-4557-841C-44AF9E347748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED2ED10C-7B62-4557-841C-44AF9E347748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED2ED10C-7B62-4557-841C-44AF9E347748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82EBBCD-4E27-4BA2-908D-06E9760AF16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82EBBCD-4E27-4BA2-908D-06E9760AF16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82EBBCD-4E27-4BA2-908D-06E9760AF16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82EBBCD-4E27-4BA2-908D-06E9760AF16C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{A1D82D43-744C-4F64-A906-47650B69EBD3} = {E4D45FBF-7114-4E61-8BF3-79DFA15FED2B}
 		{11257E43-CDCB-4FE0-8C86-2F4885E4D9E0} = {44F33FD1-1B46-4DC8-B359-C339350CF9DD}
 		{ED2ED10C-7B62-4557-841C-44AF9E347748} = {E4D45FBF-7114-4E61-8BF3-79DFA15FED2B}
+		{B82EBBCD-4E27-4BA2-908D-06E9760AF16C} = {E4D45FBF-7114-4E61-8BF3-79DFA15FED2B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D170E134-1E63-4B23-90BD-B576D285E839}

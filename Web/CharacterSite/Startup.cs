@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TabletopHelper.Data.CharacterService;
+using TabletopHelper.Data.ClassService;
 
 namespace CharacterSite
 {
@@ -22,6 +23,7 @@ namespace CharacterSite
             services.AddRazorPages();
             //change DevCharacterList to better implementation when applicable
             services.AddSingleton<ICharacterList, DevCharacterList>();
+            services.AddSingleton<IClassList, DevClassList>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Characters\Library\CharacterLibrary.csproj" />
     <ProjectReference Include="..\..\Data\CharacterService\CharacterService.csproj" />
+    <ProjectReference Include="..\..\Data\ClassService\ClassService.csproj" />
   </ItemGroup>
 
 </Project>
