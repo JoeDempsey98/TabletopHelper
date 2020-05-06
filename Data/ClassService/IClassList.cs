@@ -8,5 +8,6 @@ namespace TabletopHelper.Data.ClassService
     public interface IClassList
     {
         IEnumerable<Class> GetAllClasses();
+        Class GetClass(int id);
     }
 }

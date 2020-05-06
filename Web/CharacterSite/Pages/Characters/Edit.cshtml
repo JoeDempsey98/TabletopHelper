@@ -6,7 +6,7 @@
 
 <h1>Edit</h1>
 
-<form method="post" class="mt-3 card">
+<form method="post" class="mt-3">
     <div class="form-group row">
         <div class="col-12 text-center">
             <button asp-fragment="test-section" class="btn btn-primary"><<</button>
@@ -32,6 +32,91 @@
             <input asp-for="Character.Race" class="form-control" placeholder="Race" />
         </div>
     </div>
+    <div class="form-group row">
+        <label asp-for="Character.Classes" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <select asp-for="@Model.SelectedClassIds" asp-items="@(new SelectList(Model.Classes, nameof(Class.Id), nameof(Class.Name)))" class="form-control" ></select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Character.AbilityScores.Strength" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.AbilityScores.Strength.ScoreValue" class="form-control" placeholder="Score" />
+        </div>
+        <label asp-for="Character.AbilityScores.Dexterity" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.AbilityScores.Dexterity.ScoreValue" class="form-control" placeholder="Score" />
+        </div>
+        <label asp-for="Character.AbilityScores.Constitution" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.AbilityScores.Constitution.ScoreValue" class="form-control" placeholder="Score" />
+        </div>
+        <label asp-for="Character.AbilityScores.Wisdom" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.AbilityScores.Wisdom.ScoreValue" class="form-control" placeholder="Score" />
+        </div>
+        <label asp-for="Character.AbilityScores.Intelligence" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.AbilityScores.Intelligence.ScoreValue" class="form-control" placeholder="Score" />
+        </div>
+        <label asp-for="Character.AbilityScores.Charisma" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.AbilityScores.Charisma.ScoreValue" class="form-control" placeholder="Score" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Character.Background" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.Background" class="form-control" placeholder="Background" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Character.ExperiencePoints" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.ExperiencePoints" class="form-control" placeholder="Experience Points" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <label asp-for="Character.HitPoints.MaximumHealth" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Character.HitPoints.MaximumHealth" class="form-control" placeholder="Max HP" />
+            </div>
+        </div>
+        <div class="row">
+            <label asp-for="Character.HitPoints.CurrentHealth" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Character.HitPoints.CurrentHealth" class="form-control" placeholder="Current HP" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Character.Inspiration" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.Inspiration" class="form-control" placeholder="Inspiration" />
+        </div>
+    </div>
+    <div>
+        This is for inventory
+    </div>
+    <div>
+        This is for languages
+    </div>
+    <div class="form-group row">
+        <label asp-for="Character.PlayerName" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Character.PlayerName" class="form-control" placeholder="Player Name" />
+        </div>
+    </div>
+    <div>
+        This is for proficiencies
+    </div>
+    <div>
+        This is for skills
+    </div>
+    <div>
+        This is for spells
+    </div>
     <!--
         make a multi staged form that adds in steps to update the character
     -->
@@ -41,8 +126,5 @@
             <button type="submit" class="btn btn-primary">Update</button>
             <a asp-page="/Characters/Index" class="btn btn-primary">Cancel</a>
         </div>
-    </div>
-    <div id="test-section">
-        Test focus for form filling.
     </div>
 </form>

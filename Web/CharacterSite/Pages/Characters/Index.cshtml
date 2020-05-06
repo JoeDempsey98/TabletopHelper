@@ -17,8 +17,8 @@
                 @character.Race
                 @foreach(var c in character.Classes)
                 {
-                    <p>@c.Name</p>
-                }
+                <div>@c.Name</div> 
+                } 
             </div>
             <div class="card-footer text-center">
                 <a asp-page="/Characters/Details" asp-route-ID="@character.Id"

@@ -22,9 +22,10 @@
             <div class="card-body">
                 <h4 class="card-title">@Model.Character.CharacterName</h4>
                 <h6 class="card-text">
-                    @Model.Character.Race @foreach(var c in Model.Character.Classes) 
+                    @Model.Character.Race 
+                    @foreach(var c in Model.Character.Classes)
                     {
-                        @c.Name 
+                    <div>@c.Name</div>
                     }
                     @Model.Character.Background
                 </h6>

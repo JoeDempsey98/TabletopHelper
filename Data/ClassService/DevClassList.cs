@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using TabletopHelper.Characters.CharacterLibrary;
 
@@ -29,6 +30,11 @@ namespace TabletopHelper.Data.ClassService
         public IEnumerable<Class> GetAllClasses()
         {
             return _classList;
+        }
+
+        public Class GetClass(int id)
+        {
+            return _classList.FirstOrDefault(c => c.Id == id);
         }
     }
 }
