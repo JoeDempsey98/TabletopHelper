@@ -17,7 +17,7 @@ namespace TabletopHelper.Characters.CharacterLibrary
         public bool Inspiration { get; set; }
         public int ProficiencyBonus { get; set; }
         public List<SavingThrow> SavingThrows { get; set; }
-        public List<Skill> Skills { get; set; }
+        public Skills Skills { get; set; }
         public int ArmorClass { get; set; }
         public int Initiative { get; set; }
         public int Speed { get; set; }

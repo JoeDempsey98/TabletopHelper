@@ -99,8 +99,11 @@
     <div>
         This is for inventory
     </div>
-    <div>
-        This is for languages
+    <div class="form-group row">
+        <label asp-for="Character.Languages" class="col-sm-2 col-form-label"></label>
+        <div class=" col-sm-10">
+            <input asp-for="Character.Languages" class="form-control" placeholder="Known Languages" />
+        </div>
     </div>
     <div class="form-group row">
         <label asp-for="Character.PlayerName" class="col-sm-2 col-form-label"></label>
